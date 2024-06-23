@@ -16,22 +16,22 @@ export class Pregunta2Component {
 
     var salario_ = Number(salario.value)
     var anios_ = Number(anios.value)
-    var salarioTotal = 0
+    var utilidadesTotal = 0
 
 
     if(anios_ < 1) {
-      salarioTotal = salario_ * 0.05
+      utilidadesTotal = salario_ * 0.05
     } else if (anios_ >= 1 && anios_ < 2 ) {
-      salarioTotal = salario_ * 0.07
+      utilidadesTotal = salario_ * 0.07
     } else if (anios_ >= 2 && anios_ < 5 ) {
-      salarioTotal = salario_ * 0.07
+      utilidadesTotal = salario_ * 0.07
     } else if (anios_ >= 5 && anios_ < 10 ) {
-      salarioTotal = salario_ * 0.15
+      utilidadesTotal = salario_ * 0.15
     } else {
-      salarioTotal = salario_ * 0.20
+      utilidadesTotal = salario_ * 0.20
     }
 
-    this.utilidades = `utilidades es igual a ${salarioTotal}`
+    this.utilidades = `utilidades es igual a ${utilidadesTotal}`
 
 
   }
