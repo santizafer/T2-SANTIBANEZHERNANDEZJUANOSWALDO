@@ -24,7 +24,7 @@ export class Pregunta2Component {
     } else if (anios_ >= 1 && anios_ < 2 ) {
       utilidadesTotal = salario_ * 0.07
     } else if (anios_ >= 2 && anios_ < 5 ) {
-      utilidadesTotal = salario_ * 0.07
+      utilidadesTotal = salario_ * 0.10
     } else if (anios_ >= 5 && anios_ < 10 ) {
       utilidadesTotal = salario_ * 0.15
     } else {

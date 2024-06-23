@@ -8,7 +8,7 @@ export class AuthService {
   constructor() { }
 
   login(usuario: string, password: string) {
-    sessionStorage.setItem("isLogged", "true")
+    sessionStorage.setItem(usuario, "true")
   }
 
   logout():void {
@@ -16,7 +16,7 @@ export class AuthService {
   }
 
   isLogged():boolean {
-    return !! sessionStorage.getItem("isLogged")
+    return !! sessionStorage.getItem("santibanez")
   }
 
 }
