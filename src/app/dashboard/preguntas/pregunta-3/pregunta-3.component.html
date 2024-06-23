@@ -1,1 +1,22 @@
-<p>pregunta-3 works!</p>
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title> Materias escuela</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+
+    <div class="form">
+      <mat-form-field>
+        <mat-label>Ingrese salario</mat-label>
+        <input matInput type="number" #txtmaterias>
+      </mat-form-field>
+    </div>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="calcular(txtmaterias)">INGRESAR</button>
+  </mat-card-actions>
+</mat-card>
+
+<mat-card appearance="outlined">
+  {{costototal}}
+</mat-card>
