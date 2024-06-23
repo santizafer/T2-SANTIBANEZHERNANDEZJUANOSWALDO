@@ -19,15 +19,15 @@ export class Pregunta4Component {
     var resultadoTotal = ""
 
     if(tipo_vehiculo == "Camión" && valor_alcohol > 0.3) {
-      resultadoTotal = "sobrepasa el limite total de alcohol"
+      resultadoTotal = "sobrepasa el limite total de alcohol " + tipo_vehiculo
     } else if (tipo_vehiculo == "Autobús" && valor_alcohol > 0.3) {
-      resultadoTotal = "sobrepasa el limite total de alcohol"
+      resultadoTotal = "sobrepasa el limite total de alcohol " + tipo_vehiculo
     } else if (tipo_vehiculo == "Turismo" && valor_alcohol > 0.5) {
-       resultadoTotal = "sobrepasa el limite total de alcohol"
+       resultadoTotal = "sobrepasa el limite total de alcohol " + tipo_vehiculo
     }  else if (tipo_vehiculo == "Motocicleta" && valor_alcohol > 0.3) {
-      resultadoTotal = "sobrepasa el limite total de alcohol"
+      resultadoTotal = "sobrepasa el limite total de alcohol " + tipo_vehiculo
     } else {
-      resultadoTotal = "Control de alchool permitido"
+      resultadoTotal = `Valor o vehículo no encotrado`
     }
 
     this.resultadoalcohol = resultadoTotal
