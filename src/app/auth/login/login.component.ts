@@ -13,7 +13,6 @@ import { AuthService } from '../auth.service';
 export class LoginComponent {
 
   constructor(private router: Router, private authService: AuthService) {
-
   }
 
   submit(usuario: HTMLInputElement, password: HTMLInputElement):void{
@@ -23,7 +22,6 @@ export class LoginComponent {
     } else {
       alert("usuario y password incorrectos")
     }
-
 
   }
 }
