@@ -17,17 +17,18 @@ export class Pregunta4Component {
     var tipo_vehiculo = tipo.value
     var valor_alcohol = Number(alcohol.value)
     var resultadoTotal = ""
+    var mensaje = "sobrepasa el limite total de alcohol "
 
     if(tipo_vehiculo == "Camión" && valor_alcohol > 0.3) {
-      resultadoTotal = "sobrepasa el limite total de alcohol " + tipo_vehiculo
+      resultadoTotal = mensaje + tipo_vehiculo
     } else if (tipo_vehiculo == "Autobús" && valor_alcohol > 0.3) {
-      resultadoTotal = "sobrepasa el limite total de alcohol " + tipo_vehiculo
+      resultadoTotal = mensaje + tipo_vehiculo
     } else if (tipo_vehiculo == "Turismo" && valor_alcohol > 0.5) {
-       resultadoTotal = "sobrepasa el limite total de alcohol " + tipo_vehiculo
+       resultadoTotal = mensaje + tipo_vehiculo
     }  else if (tipo_vehiculo == "Motocicleta" && valor_alcohol > 0.3) {
-      resultadoTotal = "sobrepasa el limite total de alcohol " + tipo_vehiculo
+      resultadoTotal = mensaje + tipo_vehiculo
     } else {
-      resultadoTotal = `Valor o vehículo no encotrado`
+      resultadoTotal = "Valor o vehículo no encotrado"
     }
 
     this.resultadoalcohol = resultadoTotal
